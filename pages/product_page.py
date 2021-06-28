@@ -7,7 +7,9 @@ class ProductPage(BasePage):
         basket_button.click()
     
     def check_added_product_name(self):
-        assert "The shellcoder's handbook" in self.browser.find_element(*ProductPageLocators.ADDED_PRODUCT).text
+        product_name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
+        added_product = self.browser.find_element(*ProductPageLocators.ADDED_PRODUCT).text
+        assert product_name in added_product 
 
     def check_basket_value(self):
         book_price = self.browser.find_element(*ProductPageLocators.BOOK_PRICE).text

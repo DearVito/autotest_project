@@ -12,3 +12,4 @@ class ProductPageLocators():
     ADDED_PRODUCT = (By.XPATH, '//*[@id="messages"]/div[1]/div')
     BASKET_VALUE = (By.CSS_SELECTOR, 'div.alert p > strong')
     BOOK_PRICE = (By.CSS_SELECTOR,'p.price_color')
+    PRODUCT_NAME = (By.CSS_SELECTOR, 'div.col-sm-6.product_main > h1')
