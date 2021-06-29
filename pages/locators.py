@@ -14,3 +14,10 @@ class ProductPageLocators():
 
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    BASKET_BUTTON = (By.CSS_SELECTOR, "span.btn-group a.btn")
+
+class BasketPageLocators():
+    EMPTY_BASKET = (By.CSS_SELECTOR,'div#content_inner p')
+    BOOK_IN_BASKET = (By.CSS_SELECTOR,'img.thumbnail')
+
+    
